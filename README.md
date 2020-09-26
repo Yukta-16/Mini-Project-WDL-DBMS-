@@ -1,7 +1,1 @@
-
-
-
-
-final change1
-hello
-
+this is my miniproject
