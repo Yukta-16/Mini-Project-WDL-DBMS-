@@ -3,15 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Lifestyle Store</title>
+  <title>G.A.M.Y. Store</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="postlogin.css">
   <script src="https://use.fontawesome.com/9d4bdb51eb.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <link rel="icon" href="images/favicon.ico">
   <style media="screen">
     .jumbotron{
       margin-top: 30px;
@@ -28,6 +29,27 @@
       font-weight: bold;
       font-family:serif;
     }
+    .fa{
+      text-align: center;
+    }
+    a:hover{
+        font-weight: bold;
+    }
+    .menhover:hover{
+      color: #bbe1fa;
+      font-weight: bold;
+    }
+    .btn1{
+
+      border-color:  #bbe1fa;
+    }
+    .btn1:hover{
+      color: white;
+    }
+    .btn2:hover{
+      color:#000;
+      background-color: white;
+    }
   </style>
 </head>
 <body>
@@ -37,174 +59,249 @@
   <div class="navbar navbar-inverse navbar-fixed-top header">
     <div class="inner-header">
       <div class="logo">
-        <a href="index.html">Lifestyle Store</a>
+          <a  href="postlogin.html"> <img class="websitelogo" src="images/websitelogo1.png" alt="" width="100px" height="100px"> </a>
       </div>
       <div class="signin">
-        <a href="index.html"> <i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+        <a href="index.html"> <i style="text-align:center;" class="fa fa-sign-out" aria-hidden="true"></i><h5> Logout</h5></a>
       </div>
 
       <div class="signin">
-        <a href="setting.html"> <i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
+        <a href="setting.html"> <i style="text-align:center;" class="fa fa-cog" aria-hidden="true"></i><h5> Settings</h5></a>
       </div>
       <div class="signin">
-        <a href="cart.html"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Carts</a>
+        <a href="wishlist.html"> <i style="text-align:center;" class="fa fa-heart" aria-hidden="true"></i><h5> My Wishlist</h5></a>
+      </div>
+      <div class="signin">
+        <a href="cart.html"> <i style="text-align:center;" class="fa fa-shopping-cart" aria-hidden="true"></i><h5> My Cart</h5></a>
+      </div>
+
+
+
+      <div class="dropdown">
+        <button class="dropbtn"> <span class="menhover">MENS</span></button>
+        <div class="dropdown-content">
+        <a href="menstopwear.html">Top Wear</a>
+        <a href="mensindian.html">Indian and Festive Wear</a>
+        <a href="mensbottomwear.html">Bottomwear</a>
+        <a href="mensfootwear.html">Footwear</a>
+        <!-- <a href="menssports.html">Sports and Active Wear</a> -->
+        <a href="mensfashion.html">Fashion Accessories</a>
+      </div></div>
+      <div class="dropdown">
+        <button class="dropbtn"><span class="menhover">WOMENS</span></button>
+        <div class="dropdown-content">
+        <a href="womensindian.html">Indian and Fusion Wear</a>
+        <a href="womenswestern.html">Western Wear</a>
+        <a href="womensfashion.html">Fashion Accessories</a>
+        <a href="womenfootwear.html">Footwear</a>
+        <!-- <a href="womensports.html">Sports and Active Wear</a> -->
+        <a href="womenbeauty.html">Beauty & Personal Care</a>
+      </div></div>
+      <div class="dropdown">
+        <button class="dropbtn"><span class="menhover">KIDS</span></button>
+        <div class="dropdown-content">
+        <a href="kidsboys.html">Boys Clothing</a>
+        <a href="kidsgirls.html">Girls Clothing</a>
+        <a href="kidsboysfootwear.html">Boys Footwear</a>
+        <a href="kidsgirlsfootwear.html">Girls Footwear</a>
+        <!-- <a href="kidsinfant.html">Infants</a> -->
+        <a href="lidsaccessories.html">Kids Accessories</a>
+      </div></div>
+      <!-- <div class="dropdown">
+        <button class="dropbtn"><span class="menhover">HOME AND LIVING</span></button>
+        <div class="dropdown-content">
+        <a href="homebed.html">Bed Linen & Furnishing</a>
+        <a href="homeflooring.html">Flooring</a>
+        <a href="homebath.html">Bath</a>
+        <a href="homelamps.html">Lamps & Lighting</a>
+        <a href="homecushion.html">Cushions & Cushion Covers</a>
+        <a href="homecurtains.html">Curtains</a>
+      </div></div> -->
+
+        </div>
       </div>
 
     </div>
 
-  </div>  </div>
+    <br> <br>
   <div class="container">
+
     <div class="jumbotron">
-      <h1>Welcome to our Lifestyle Store!</h1>
+      <h1>Welcome to our G.A.M.Y. Store!</h1>
       <p>
-We have the best cameras, watches and shirts for you. No need to hunt around, we
+        We have Mens, Womens, Kids, Home and Living all types of categories available!!
+<br> No need to hunt around, we
 have all in one place.
 </p>
     </div>
 
   </div> <hr>
+  <h1 class="headh1">DEALS OF THE DAY!</h1> <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+        <a href="#"> <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/10942370/2019/11/19/3cfdd561-ad23-4ee4-8187-de635252a15e1574150056042-Anubhutee-Women-Navy-Blue--Off-White-Yoke-Design-Kurta-with--1.jpg" alt="cam-pic">
+      </a>     <div class="caption">
+            <h3 class="deals">Extra 20% off</h3>
+            <h4 class="deals">and more!!</h4>
+            <!-- <button type="button" name="button" class="btn btn-primary btn-block btn2">Add to cart</button> -->
+            <!-- <button type="button" class="btn btn-outline-primary btn-block btn1">Wishlist</button> -->
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+      <a href="#">  <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12377104/2020/9/2/cf7655c5-6f4c-49a4-bbce-7ba8112030431599021723074-Fossil-Explorist-HR-Black-Smartwatch-FTW4018-571599021722215-1.jpg" alt="cam-pic">
+      </a>      <div class="caption">
+            <h3 class="deals">Starting at Rs 4199</h3>
+            <h4 class="deals">Stylish Watches</h4>
+            <!-- <button type="button" name="button" class="btn btn-primary btn-block btn2">Add to cart</button> -->
+            <!-- <button type="button" class="btn btn-outline-primary btn-block btn1">Wishlist</button> -->
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+    <a href="#">     <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1447060/2018/3/15/11521114250392-Makeup-Revolution-London-Eye-Shadow-Palette-2381521114250314-1.jpg" alt="">
+  </a>         <div class="caption">
+            <h3 class="deals">Upto 50% Off</h3>
+            <h4 class="deals">On beauty products</h4>
+            <!-- <button type="button" name="button" class="btn btn-primary btn-block btn2">Add to cart</button> -->
+            <!-- <button type="button" class="btn btn-outline-primary btn-block btn1">Wishlist</button> -->
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+      <a href="#">   <img src="https://m.media-amazon.com/images/I/61kDV8aMXKL._AC_UL480_FMwebp_QL65_.jpg" alt="cam-pic"></a>
+          <div class="caption">
+            <h3 class="deals">Flat 30% off</h3>
+            <h4 class="deals">On footwear</h4>
+            <!-- <button type="button" name="button" class="btn btn-primary btn-block btn2">Add to cart</button>
+            <button type="button" class="btn btn-outline-primary btn-block btn1">Wishlist</button> -->
+          </div>
+        </div>
+
+      </div>
+
+
+      </div>  </div>
+<hr>
   <h1 class="headh1">SOME OF OUR TOP SELLERS!</h1> <hr>
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-6">
         <div class="thumbnail">
-          <img src="images/2.jpg" alt="cam-pic">
+          <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11750400/2020/9/10/484913c6-78fe-42fe-ba69-646482b7691e1599714745980-INVICTUS-Men-Tshirts-2261599714744795-1.jpg" alt="cam-pic">
           <div class="caption">
-            <h3>Sony DSLR</h3>
-            <p>Price Rs:40000</p>
-            <button type="button" name="button" class="btn btn-primary btn-block">Add to cart</button>
+            <h3>Roadster T-shirt</h3>
+            <p>Price Rs:599</p>
+            <button type="button" name="button" class="btn btn-primary btn-block btn2">Add to cart</button>
+            <button type="button" class="btn btn-outline-primary btn-block btn1">Wishlist</button>
           </div>
         </div>
 
       </div>
       <div class="col-md-3 col-sm-6">
         <div class="thumbnail">
-          <img src="images/3.jpg" alt="cam-pic">
+          <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12436290/2020/9/16/35d97fb4-eb52-45fa-8649-a4b1569d05dc1600250132002KurtasBibaWomenKurtaSetsBibaWomenKurtaSetsBibaWomenKurtaSets1.jpg" alt="cam-pic">
           <div class="caption">
-            <h3>Sony DSLR</h3>
-            <p>Price Rs:50000</p>
-            <button type="button" name="button" class="btn btn-primary btn-block">Add to cart</button>
+            <h3>Biba Kurta</h3>
+            <p>Price Rs:1199</p>
+            <button type="button" name="button" class="btn btn-primary btn-block  btn2">Add to cart</button>
+              <button type="button" class="btn btn-outline-primary btn-block btn1">Wishlist</button>
           </div>
         </div>
 
       </div>
       <div class="col-md-3 col-sm-6">
         <div class="thumbnail">
-          <img src="images/4.jpg" alt="cam-pic">
+          <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/6739144/2018/6/14/2146f603-17ff-4d48-ad25-08299b218e8a1528957158801-Puma-Smash-v2-L-2711528957158375-1.jpg" alt="cam-pic">
           <div class="caption">
-            <h3>olympus DSLR</h3>
-            <p>Price Rs:80000</p>
-            <button type="button" name="button" class="btn btn-primary btn-block">Add to cart</button>
+            <h3>Puma Men Sneakers</h3>
+            <p>Price Rs:1924</p>
+            <button type="button" name="button" class="btn btn-primary btn-block  btn2">Add to cart</button>
+              <button type="button" class="btn btn-outline-primary btn-block btn1">Wishlist</button>
           </div>
         </div>
 
       </div>
       <div class="col-md-3 col-sm-6">
         <div class="thumbnail">
-          <img src="images/5.jpg" alt="cam-pic">
+          <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/7406845/2018/9/15/fbd7f68e-fefd-46ec-93c2-eabfe40b27891536995805792-na-3271536995805691-1.jpg" alt="cam-pic">
           <div class="caption">
-            <h3>Canon EOS</h3>
-            <p>Price Rs:36000</p>
-            <button type="button" name="button" class="btn btn-primary btn-block">Add to cart</button>
+            <h3>Divine Casa</h3>
+            <p>Price Rs:701</p>
+            <button type="button" name="button" class="btn btn-primary btn-block  btn2">Add to cart</button>
+              <button type="button" class="btn btn-outline-primary btn-block btn1">Wishlist</button>
           </div>
         </div>
 
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnail">
-          <img src="images/9.jpg" alt="cam-pic">
-          <div class="caption">
-            <h3>Titan Model#301</h3>
-            <p>Price Rs:13000</p>
-            <button  type="button" name="button" class="btn btn-primary btn-block">Add to cart</button>
-          </div>
-        </div>
+      </div>        </div>       </div>
+      <hr>
+        <h1 class="headh1">SALES!   SALES!   SALES!</h1> <hr>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="thumbnail">
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11700102/2020/9/3/e2e291e4-6522-4b97-a842-85302fcb57601599120166862-Mast--Harbour-Men-Mustard-Solid-Round-Neck-T-shirt-589159912-1.jpg" alt="cam-pic">
+                <div class="caption">
+                  <h3>DILLINGER <br> ROUND NECK T-shirt</h3>
+                  <p>Rs:539 <del> <span style="color:gray;">Rs.1199</span></del> <span style="color:orange;">(55% Off)</span></p>
+                  <button type="button" name="button" class="btn btn-primary btn-block btn2">Add to cart</button>
+                  <button type="button" class="btn btn-outline-primary btn-block btn1">Wishlist</button>
+                </div>
+              </div>
 
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnail">
-          <img src="images/10.jpg" alt="cam-pic">
-          <div class="caption">
-            <h3>Titan Model#201</h3>
-            <p>Price Rs:3000</p>
-            <button type="button" name="button" class="btn btn-primary btn-block">Add to cart</button>
-          </div>
-        </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="thumbnail">
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/9070277/2019/4/1/778bd489-d0e5-46ab-be0e-e03af9b794e11554109637847-SASSAFRAS-Women-Tops-3961554109636914-1.jpg" alt="cam-pic">
+                <div class="caption">
+                  <h3>SASSAFRAS<br>  Solid A-Line Top</h3> <br>
+                  <p>Rs:584 <del> <span style="color:gray;">Rs.1299</span></del> <span style="color:orange;">(55% Off)</span></p>
+                  <button type="button" name="button" class="btn btn-primary btn-block  btn2">Add to cart</button>
+                    <button type="button" class="btn btn-outline-primary btn-block btn1">Wishlist</button>
+                </div>
+              </div>
 
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnail">
-          <img src="images/11.jpg" alt="cam-pic">
-          <div class="caption">
-            <h3>HMT Milan</h3>
-            <p>Price Rs:8000</p>
-            <button type="button" name="button" class="btn btn-primary btn-block">Add to cart</button>
-          </div>
-        </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="thumbnail">
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/12/9/fe268717-dc4a-4955-91e7-c792793fd8ac1575842915486-1.jpg" alt="cam-pic">
+                <div class="caption">
+                  <h3>Bhama Lehenga</h3> <br> <br> <br>
+                  <p>Rs:987 <del> <span style="color:gray;">Rs.2599</span></del> <span style="color:orange;">(62% Off)</span></p>
+                  <button type="button" name="button" class="btn btn-primary btn-block  btn2">Add to cart</button>
+                    <button type="button" class="btn btn-outline-primary btn-block btn1">Wishlist</button>
+                </div>
+              </div>
 
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnail">
-          <img src="images/12.jpg" alt="cam-pic">
-          <div class="caption">
-            <h3>Faber LUBA#111</h3>
-            <p>Price Rs:18000</p>
-            <button type="button" name="button" class="btn btn-primary btn-block">Add to cart</button>
-          </div>
-        </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="thumbnail">
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11294534/2020/1/17/560bb608-282d-4c1f-ae10-80e7d0a5384d1579265119600-MANGO-Women-Blazers-5261579265118768-1.jpg" alt="cam-pic">
+                <div class="caption">
+                  <h3>MANGO<br>  Women Formal Wear</h3>
+                  <p>Rs:2973 <del> <span style="color:gray;">Rs.3999</span></del> <span style="color:orange;">(30% Off)</span> </p>
+                  <button type="button" name="button" class="btn btn-primary btn-block  btn2">Add to cart</button>
+                    <button type="button" class="btn btn-outline-primary btn-block btn1">Wishlist</button>
+                </div>
+              </div>
 
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnail">
-          <img src="images/6.jpg" alt="cam-pic">
-          <div class="caption">
-            <h3>Luis Phil</h3>
-            <p>Price Rs:1000</p>
-            <button type="button" name="button" class="btn btn-primary btn-block">Add to cart</button>
-          </div>
-        </div>
+            </div>        </div>       </div>
 
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnail">
-          <img src="images/8.jpg" alt="cam-pic">
-          <div class="caption">
-            <h3>H & W</h3>
-            <p>Price Rs:800</p>
-            <button type="button" name="button" class="btn btn-primary btn-block">Add to cart</button>
-          </div>
-        </div>
 
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnail">
-          <img src="images/13.jpg" alt="cam-pic">
-          <div class="caption">
-            <h3>John Zok</h3>
-            <p>Price Rs:1500</p>
-            <button type="button" name="button" class="btn btn-primary btn-block">Add to cart</button>
-          </div>
-        </div>
 
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="thumbnail">
-          <img src="images/14.jpg" alt="cam-pic">
-          <div class="caption">
-            <h3>Jhalsani</h3>
-            <p>Price Rs:1300</p>
-            <button type="button" name="button" class="btn btn-primary btn-block">Add to cart</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
   <hr>
   <footer>
     <div class="container">
        <center>
-              <p class="footerText">Copyright &copy; Lifestyle Store.All Rights Reserved | Contact Us: +9190000 00000</p>
+              <p class="footerText">Copyright &copy; Lifestyle Store.All Rights Reserved | Contact Us: +91 86559 91140 | To know more: <a href="about.html">Visit Me</a></p>
       </center>
     </div>
   </footer>
